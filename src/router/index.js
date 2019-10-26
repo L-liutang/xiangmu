@@ -5,6 +5,8 @@ import HelloWorld from '@/components/HelloWorld'
 import vivo from '@/components/exam/vivo'
 import login from '@/components/exam/login'
 import regester from '@/components/exam/regester'
+import productList from '@/components/exam/productList'
+import detail from '@/components/exam/detail'
 Vue.use(Router)
 
 export default new Router({
@@ -23,6 +25,16 @@ export default new Router({
       path: '/regester',
       name: 'regester',
       component: regester
+    },
+    {
+      path: '/productList',
+      name: 'productList',
+      component:productList
+    },
+    {
+      path: '/detail',
+      name: 'detail',
+      component:detail
     },
   ]
 })

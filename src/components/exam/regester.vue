@@ -3,15 +3,28 @@
         <table></table>
         <div class="regester">
            <p class="title">账号注册</p>
-           <div>
-                <el-select v-model="value" multiple filterable allow-create default-first-option placeholder="地区">
-                <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
-                </el-option>
-                </el-select>
-           </div>
-           <p>成功注册账号后，国家/地区将不能被修改</p>
-           <div>
-
+           <div class="content">
+            <div class="select">
+                  <select >
+                    <option :value="item.value" v-for="(item,i) of options" :key="i">{{item.value}}</option>
+                  </select>
+            </div>
+            <p class="hint">成功注册账号后，国家/地区将不能被修改</p>
+            <div class="phone_code">
+                <span>+86</span>
+               <input v-model="phone" placeholder="请输入手机号" type="text"> </input>
+            </div>
+            <div class="check_box">
+                      <div>
+                          <img src="../../../static/true.png" alt="">
+                      </div>
+                       <span style=" color:#252525;;line-height:1.8; ">我已阅读并接受 
+                         <a href="" style="color:#456fff">《服务协议》</a> 
+                         </span>
+             </div>
+             <div class="button_blue">
+                   <el-button type="primary">注册</el-button>
+            </div>
            </div>
         </div>
     </div>

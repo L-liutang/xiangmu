@@ -5,7 +5,7 @@
                <img src="../../../static/login1.jpg" alt="">
            </router-link>
            <!--登录-->
-           <div class="login" v-show="hidden">
+           <!-- <div class="login" v-show="hidden">
                <div class="title">短信验证码登录</div>
                <div class="toggle">
                    <span @click="handle">账号登录</span>
@@ -52,7 +52,7 @@
                    <img src="../../../static/wb.png" alt="">
                    </div>
                </div>
-           </div>
+           </div> -->
            <!--登录2-->
            <div class="login_selector" >
                <div class="title">账号登录</div>
