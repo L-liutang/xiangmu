@@ -32,7 +32,7 @@ export default new Router({
       component:productList
     },
     {
-      path: '/detail',
+      path: '/detail/:fid',
       name: 'detail',
       component:detail
     },

@@ -25,13 +25,30 @@
 }
 .select{
     margin-top:70px;
+    width: 100%;
+    height: 48px;
+    border: 1px solid #dedfe0;
+    display:flex;
+    justify-content: space-between; 
 }
-.select select{
-    width:344px;
-    height:46px; 
+.select span{
+    height: 100%;
+    line-height: 48px;
+    padding-left: 12px;
+    font-size: 16px;
+    color: #000;
+    text-align:left;
+    
+}
+.select input{
+    width:358px;
+    height:100%;
     border-color:#dedfe0;
     outline:none;
+    border:none;
     padding-left:20px;
+     box-sizing:border-box;
+     
 }
 .hint{
     margin-top: 10px;
@@ -46,27 +63,18 @@
     height: 48px;
     border: 1px solid #dedfe0;
     box-sizing:border-box;
-    display:flex;
-    justify-content: space-between;
+    padding-left:20px;
 }
-.phone_code span{
-    height: 100%;
-    width:65px;
-    line-height: 48px;
-    padding-left: 12px;
-    font-size: 16px;
-    color: #000;
-    text-align:left;
-    
-}
+
 .phone_code input{
     outline: none;
     border:none;
     padding-right:20px;
-    width:358px;
+    width:100%;
     height:100%;
     font-size:16px;
     color:#000;
+    box-sizing:border-box;
 }
 .check_box{
     margin-top:19px;

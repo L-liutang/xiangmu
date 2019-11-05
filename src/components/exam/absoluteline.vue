@@ -1,16 +1,18 @@
 <template>
     <div class="right_b">
             <div>
-            <img src="../../../static/购物车.png"  alt="">
+               <div class="shop"></div>
             </div>
             <div>
-            <img src="../../../static/客服.png"  alt="">
+            <div class="kf"></div>
             </div>
             <div>
-            <img src="../../../static/帮助.png" alt="">
+            <div class="help"></div>
             </div>
             <div>
-            <img src="../../../static/向上.png" alt="">
+            <div class="up">
+                <el-backtop target=".page-component__scroll .el-scrollbar__wrap"></el-backtop>
+            </div>
             </div>
         </div>
 </template>
@@ -18,16 +20,16 @@
 export default {
     data(){
         return{
-            url1:require("../../../static/购物车.png"),url_d1:require("../../../static/购物车1.png"),    
-            url2:require("../../../static/客服.png"),url_d2:require("../../../static/客服1.png"),
-            url3:require("../../../static/帮助.png"),url_d3:require("../../../static/帮助1.png"),
-            url4:require("../../../static/向上.png"),url_d4:require("../../../static/向上1.png"),     
+              shop:require('../../../static/shopping_car.png'),
+              kf:require('../../../static/kf.png'),
+              help:require('../../../static/help.png'),
+              up:require('../../../static/up.png')
         }
     },
     methods:{
-    handle1(){
-        
-    } 
+        shopp(){
+            this.shop=require('../../../static/shopping_car1.png')
+        }
     }
 }
 </script>
@@ -52,7 +54,7 @@ export default {
 .right_b>div:hover{
     background-color:#ccc
 }
-.right_b img{
+ .right_b>div div{
     width:30px;
     height:30px;
     position: absolute;
@@ -60,6 +62,34 @@ export default {
     right:10px;
     bottom:10px;
     left:10px;
+} 
+.shop{
+    background-image:url(../../../static/shopping_car.png);
+    background-size: 110% 110%;
+}
+.shop:hover{
+    background-image:url(../../../static/shopping_car1.png);
+}
+.kf{
+    background-image:url(../../../static/kf.png);
+    background-size: 110% 110%;
+}
+.kf:hover{
+    background-image:url(../../../static/kf1.png);
+}
+.help{
+    background-image:url(../../../static/help.png);
+    background-size: 110% 110%;
+}
+.help:hover{
+    background-image:url(../../../static/help1.png);
+}
+.up{
+    background-image:url(../../../static/up.png);
+    background-size: 110% 110%;
+}
+.up:hover{
+    background-image:url(../../../static/up1.png);
 }
 </style>
 

@@ -10,10 +10,10 @@
         <li class="header-left-show"><router-link class="show-left" to="">社区</router-link></li>     
       </ul> 
       <div class="header-right"> 
-          <div class="header-right-show"><router-link class="show-left" to="">购物车</router-link></div>
-          <div class="header-right-showup"><router-link class="show-left" to="">登录</router-link></div>
+          <div class="header-right-show"><router-link class="show-left" to="" >购物车</router-link></div>
+          <div class="header-right-showup" @click="login"><router-link class="show-left" to="" >登录</router-link></div>
           <div class="header-right-showup">|</div>
-          <div class="header-right-showon"><router-link class="show-left" to="">注册</router-link></div>
+          <div class="header-right-showon" @click="regester"><router-link class="show-left" to="" >注册</router-link></div>
       </div>
     </div>
     <div class="nav">
@@ -41,7 +41,19 @@
 </template>
 <script>
 export default {
-    
+    data(){
+        return{
+
+        }
+    },
+    methods:{
+        login(){
+            this.$router.push("/login")
+        },
+        regester(){
+            this.$router.push("/regester")
+        }
+    }
 }
 </script>
 <style scoped>
@@ -78,14 +90,14 @@ position: relative;
 }
 .header-right-showup{
     padding-right:18px;
-    font-size:12px;
     font-weight:400;
     line-height:32px;
     white-space: nowrap;
     color:#ccc
 }
 .show-left{
-color:#ccc;
+    font-size:12px;
+    color:#ccc;
 }
 .header-right-showon{
     color:#ccc;
@@ -114,7 +126,7 @@ color:#ccc;
 .nave-v{
     font-weight:600;
     color:#333;
-    
+    font-size:18px;
 }
 .show-left:hover{
     color:#848484;

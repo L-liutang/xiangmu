@@ -44,7 +44,7 @@
     cursor: pointer;
 }
 .phone_code{
-    margin-top: 15px;
+    margin-top: 20px;
     width: 100%;
     height: 48px;
     border: 1px solid #dedfe0;
@@ -70,11 +70,12 @@
     height:100%;
     font-size:16px;
     color:#000;
+    box-sizing:border-box;
 }
 .mal{
     margin-top: 15px;
-    height: 48px;
-    line-height: 48px;
+    height: 46px;
+    line-height: 46px;
     padding-left: 12px;
     border: 1px solid #dedfe0;
     display:flex;
@@ -100,6 +101,7 @@
     overflow: hidden;
     border-left:1px solid #dedfe0;
 }
+
 .mal span{
     color: #456fff;
     cursor: pointer;
@@ -108,9 +110,14 @@
     margin-top:19px;
     font-size:14px;
     display:flex;
-    justify-content: flex-end;
+    justify-content:space-between;
+    white-space: nowrap;
 }
-.check_box div{
+.check_box_first{
+    display:flex;
+    white-space: nowrap;
+}
+.check_box_first div{
     width: 18px;
     height: 18px;
     background-color: #fff;
@@ -121,7 +128,13 @@
 .check_box img{
     width: 70%;
     height: 70%;
-    padding-top:2px
+    padding-top:2px;
+    background-image:url()
+}
+.check_box span{
+    line-height:1.8;
+    color:#ec3f3f;
+    font-size:14px;
 }
 .button_blue,.button-transparents{
     margin-top:20px;
@@ -179,24 +192,31 @@
     width:360px;
     height:30px;
 }
-.b_pic div{
+.b_pic_all{
     width:180px;
     height:100%;
     display:flex;
     justify-content: space-between;
 }
-.b_pic img{
+.b_pic_first,.b_pic_second,.b_pic_last{
     width:26px;
     height:26px;
 }
+/* .b_pic_first{
+    background-image:url(../../static/wx.png) !important;
+    z-index:999;
+}
+.b_pic_first:hover{
+    background:url(../../static/wx_selector.png)
+} */
 .login_selector{
     z-index:2;
     height:550px;
 }
 .mal img{
-    width:26px;
-    height:18px;
+    width:35px;
+    height:35px;
     margin-right:20px;
-    margin-top:16px;
+    margin-top:8px;
 
 }
